@@ -1,0 +1,78 @@
+/* ini: Preloader */
+@keyframes preloaderimg {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgb(136, 12, 88);
+    background: linear-gradient(123deg, rgb(136, 12, 88) 0%, rgb(225, 76, 88) 35%, rgb(236, 156, 77) 64%, rgb(45, 97, 175) 83%, rgb(45, 168, 221) 100%);
+    z-index:9999 !important; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader img {
+    opacity: 0.8;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 100vh;
+    animation: preloaderimg  0.3s infinite alternate-reverse;
+}
+@media (min-width: 800px) and (max-width: 999px) {
+    #preloader img {
+        width: 50vw;
+        height: auto;
+    }
+}
+@media  (max-width: 799px){
+    #preloader img {
+        width: 70vw;
+        height: auto;
+    }
+
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+
+/* end: Preloader */
