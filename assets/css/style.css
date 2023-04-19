@@ -550,19 +550,23 @@ section .info__paragraph {
     font-family: "Avenir Next", "Avenir", sans-serif;
     font-weight: 900;
 }
-.info2__card h3:nth-child(4){
+
+.info2__card h3:nth-child(4) {
     margin-top: 5rem !important;
     color: #ddb500;
 }
-.info2__card p:nth-child(2){
+
+.info2__card p:nth-child(2) {
     margin-top: 5rem;
     font-weight: 500;
 }
-.info2__card p:nth-child(3){
+
+.info2__card p:nth-child(3) {
     font-weight: 900;
     font-size: 20px;
     text-decoration: underline;
 }
+
 .info2__card div {
     color: #fff;
     background-color: #00000031;
@@ -599,8 +603,8 @@ section .info__paragraph {
     background-size: cover;
 }
 
-.info2__card .btn-warning{
-    padding: 15px 50px 15px 50px ;
+.info2__card .btn-warning {
+    padding: 15px 50px 15px 50px;
     margin-top: 2rem;
     font-size: 20px;
     font-weight: 900;
@@ -622,116 +626,175 @@ section:nth-of-type(3) h1 {
 }
 
 /* HISTÓRIA */
-section:nth-of-type(4){
+section:nth-of-type(4) {
     background-color: white;
     background-image: url(/img/Favicon/Favicon.png);
     background-position: center;
     background-repeat: no-repeat;
     padding: 10rem 0 5rem 0;
 }
-.historia{
+
+.historia {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.historia h1{
+
+.historia h1 {
     font-weight: 900;
 }
+
 /* img */
-section:nth-of-type(5){
+section:nth-of-type(5) {
     background-image: url(/img/Fotos/IMG_3144.jpg);
     height: 25rem;
 }
 
 /* EMPRESAS PARCEIRAS */
 
-.parceiras{
+.parceiras {
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10rem 0 8rem 0;
 }
-.parceiras h1 {
-    margin-top: 10rem;
-}
-.containerer {
-    position: relative;
-    width: 320px;
-    margin: 100px auto 0 auto;
-    perspective: 10000px;
-  }
-  
-  .carousell {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d; 
-    animation: rotate360 20s infinite forwards linear;
-  }
-  .carousel__face { 
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-size: cover;
+
+
+
+/* footr */
+
+/* Footer */
+.footer {
+    background: rgb(136, 12, 88);
+    background: linear-gradient(326deg, rgba(136, 12, 88, 1) 0%, rgba(225, 76, 88, 1) 5%, rgba(236, 156, 77, 1) 9%, rgba(45, 97, 175, 1) 13%, rgba(45, 168, 221, 1) 17%, rgba(0, 0, 0, 1) 21%);
+    box-shadow: 0px 40px 20px 20px rgba(0, 0, 0, 0.3);
     display: flex;
-  }
-  
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    color: white;
+}
 
-  
-  
-  .carousel__face:nth-child(1) {
-    background-image: url(/img/parceiras/academia-do-cerebro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: rotateY(  0deg) translateZ(430px); }
-  .carousel__face:nth-child(2) { 
-    background-image: url(/img/parceiras/exito-cem.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-      transform: rotateY( 40deg) translateZ(430px); }
-  .carousel__face:nth-child(3) {
-    background-image: url(/img/parceiras/Marca\ Start2Up\ 1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: rotateY( 80deg) translateZ(430px); }
-  .carousel__face:nth-child(4) {
-    background-image: url(/img/parceiras/Vinniluz\ 2023\ -\ BRANCA\ SF.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    transform: rotateY(120deg) translateZ(430px); }
-  .carousel__face:nth-child(5) { 
-    background-image: url(/img/parceiras/academia-do-cerebro.jpg);
-   transform: rotateY(160deg) translateZ(430px); }
-  .carousel__face:nth-child(6) { 
-    background-image: url(/img/parceiras/exito-cem.jpg);
-   transform: rotateY(200deg) translateZ(430px); }
-  .carousel__face:nth-child(7) { 
-    background-image: url(/img/parceiras/Marca\ Start2Up\ 1.png);
-   transform: rotateY(240deg) translateZ(430px); }
-  .carousel__face:nth-child(8) {
-    background-image: url(/img/parceiras/Vinniluz\ 2023\ -\ BRANCA\ SF.png);
-    transform: rotateY(280deg) translateZ(430px); }
-  .carousel__face:nth-child(9) {
-    background-image: url(/img/parceiras/exito-cem.jpg);
-    transform: rotateY(320deg) translateZ(430px); }
-  
-  
-  
-  @keyframes rotate360 {
-    from {
-      transform: rotateY(0deg);
+.footer .logo-footer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .logo-footer li a {
+    color: white;
+    margin-top: 10px;
+}
+
+.footer .logo-footer li {
+    margin: 8px;
+}
+
+.footer .logo-footer li a:hover {
+    transition: ease-in-out .3s;
+    color: #99a0b0;
+}
+
+.copyright {
+    display: flex;
+    background: black;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    bottom: 0;
+}
+footer{
+    padding-top: 1rem;
+}
+.copyright p {
+    font-size: 12px;
+}
+
+.copyright a {
+    color: rgba(184, 184, 184, 0.355);
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 999px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    to {
-      transform: rotateY(-360deg);
+
+    .logo-footer {
+        margin-top: 20px;
+        width: 100% !important;
+        justify-content: center;
+        margin-left: 30px;
     }
-  }
-  
 
-  /* footr */
+    .logo-footer li {
+        margin-top: 5px;
+    }
 
-  footer{
-    height: 20rem;
-    background-color: black;
-    margin-top: 30rem;
-  }
+    .footer-topo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .Footer .informations {
+        width: 100vw;
+    }
+
+    .Footer .informations li {
+        margin-top: -4px;
+    }
+
+    .Footer span {
+        font-size: 15px;
+    }
+}
+
+footer .footer__redesSociais {
+    margin: 10px 0 10px 0;
+}
+
+footer .footer__redesSociais a {
+    color: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 3px 8px 3px 8px;
+}
+
+footer .footer__redesSociais a:nth-child(1):hover {
+    color: #be1b7c;
+    border: 1px solid;
+    transition: ease .1s;
+}
+
+footer .footer__redesSociais a:nth-child(2):hover {
+    color: #3b5998;
+    border: 1px solid;
+    transition: ease .1s;
+}
+
+footer .footer__redesSociais a:nth-child(3):hover {
+    color: #0e76a8;
+    border: 1px solid;
+    transition: ease .1s;
+}
+
+footer .footer__redesSociais a:nth-child(4):hover {
+    color: #c71515;
+    border: 1px solid;
+    transition: ease .1s;
+}

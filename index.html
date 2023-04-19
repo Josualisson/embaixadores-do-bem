@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- SLIDE -->
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   <!-- PRELOADER -->
   <link rel="stylesheet" href="assets/css/preloader.css">
   <script src="assets/javascript/trava-scrolling.js"></script>
@@ -32,7 +34,7 @@
   </div>
   <!-- fim do preloader -->
   <!-- Menu Navbar -->
-  <header class="menu">
+  <header class="menu" id="header">
     <nav>
       <a class="logo" href="/"><img src="img/Favicon/Favicon.png" alt="Embaixadores do Bem - LOGO"
           style="width: 9.5rem; padding: 0; margin: 0; margin-bottom: 13px; margin-right: -90px !important;"></a>
@@ -43,10 +45,11 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#" class="nav-list_scrollReveal1">Sobre nós</a></li>
-        <li><a href="#" class="nav-list_scrollReveal2">Pilares</a></li>
-        <li><a href="#" class="nav-list_scrollReveal3">Como ajudar</a></li>
-        <li><a href="#" class="bton btn--doar nav-list_scrollReveal4">Doar</a></li>
+        <li><a href="#trabalho" class="nav-list_scrollReveal1">Nossos Trabalhos</a></li>
+        <li><a href="#transformamos" class="nav-list_scrollReveal2">Transformamos</a></li>
+        <li><a href="#historia" class="nav-list_scrollReveal3">Nossa História</a></li>
+        <li><a href="#parceiras" class="nav-list_scrollReveal3">Empresas Parceiras</a></li>
+        <li><a href="#doar" class="bton btn--doar nav-list_scrollReveal4">Doar</a></li>
       </ul>
     </nav>
   </header>
@@ -78,7 +81,7 @@
     <img src="img/Favicon/Favicon.png" alt="">
   </div>
   <!-- SECTION PARALLAX -->
-  <section>
+  <section id="trabalho">
     <!-- DIV INFORMAÇÕES -->
     <div class="info col text-center row justify-content-center">
       <h2 class="">Nossos Trabalhos</h2>
@@ -130,7 +133,7 @@
 
   </section>
 
-  <section>
+  <section id="transformamos">
     <h1>TRANSFORMAMOS</h1>
     <ul class="line">
       <li></li>
@@ -145,7 +148,7 @@
       onde todos tenham a oportunidade de alcançar seu potencial máximo."</p>
   </section>
 
-  <section>
+  <section id="doar">
     <div class="info2">
       <h1>Transforme Vidas</h1>
       <ul class="line">
@@ -198,7 +201,7 @@
     </div>
   </section>
   <!-- HISTÓRIA -->
-  <section>
+  <section id="historia">
     <div class="historia">
       <h1>Nossa História</h1>
       <ul class="line">
@@ -221,7 +224,7 @@
     <!-- img -->
   </section>
   <!-- Empresas parceiras -->
-  <section>
+  <section id="parceiras">
     <div class="parceiras">
       <h1>Empresas Parceiras:</h1>
       <ul class="line">
@@ -229,28 +232,97 @@
         <li></li>
         <li></li>
       </ul>
-      <div class="containerer">
-        <div class="carousell">
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
-          <div class="carousel__face"><span></span></div>
+      <div class="swiffy-slider slider-item-show4 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4" data-slider-nav-autoplay-interval="2000">
+        <div class="slider-container">
+            <div><img src="img/parceiras/academia-do-cerebro.jpg" alt="..."></div>
+            <div><img src="img/parceiras/exito-cem.jpg" loading="lazy" alt="..."></div>
+            <div><img src="img/parceiras/Marca Start2Up 1.png" loading="lazy" alt="..."></div>
+            <div><img src="img/parceiras/Vinniluz 2023 - BRANCA SF.png" loading="lazy" alt="..."></div>
         </div>
-      </div>
+        <button type="button" class="slider-nav" aria-label="Go left"></button>
+        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
     </div>
   </section>
 
-  <footer>
+<!-- FOOTER -->
 
-  </footer>
+<div class="footer" id="footer">
+  <div class="informations">
+    <ul>
+      <li class="li-1">
+        <i class="fa-solid fa-building"></i>
+        <span>
+          Embaixadores do Bem
+        </span>
+      </li>
+      <br>
+      <li class="li-2">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>
+          Rua Ernesto de Paula Santos, 1172, sala 107, edifício Nestor Rocha, Boa Viagem
+        </span>
+      </li>
+      <br>
+      <li class="li-3">
+        <i class="fa-solid fa-clock"></i>
+        <span>
+          Segunda a Sexta: 09:00 às 18:00
+        </span>
+      </li>
+      <br>
+      <li class="li-4">
+        <i class="fa-solid fa-envelope"></i>
+        <span>
+          Email - embaixadoresdobem.pe@gmail.com
+        </span>
+      </li>
+      <br>
+      <li class="li-5">
+        <i class="fa-solid fa-phone"></i>
+        <span>
+          Telefone - (81)99918-9295
+        </span>
+      </li>
+  </div>
+
+  <div class="logo-footer">
+    <li class="li-1">
+      <a href="#trabalho"><i class="fa-solid fa-circle-arrow-right"></i>Nossos Trabalhos</a>
+    </li>
+    <li class="li-2">
+      <a href="#transformamos"><i class="fa-solid fa-circle-arrow-right"></i>Transformamos</a>
+    </li>
+    <li class="li-3">
+      <a href="#historia"><i class="fa-solid fa-circle-arrow-right"></i>Nossa História</a>
+    </li>
+    <li class="li-4">
+      <a href="#parceiras"><i class="fa-solid fa-circle-arrow-right"></i>Empresas Parceiras</a>
+    </li>
+    <li class="li-5">
+      <a href="#doar"><i class="fa-solid fa-circle-arrow-right"></i>Doar</a>
+    </li>
+  </div>
+  <div class="footer-topo">
+    <a href="#header" class="btn btn-secondary"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</div>
+
+<footer class="copyright">
+  <h6>
+    © Copyright - Embaixadores do Bem 2023 – Todos os direitos reservados
+  </h6>
+  <div class="footer__redesSociais">
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href=""><i class="fa-solid fa-play"></i></a>
+</div>
+  <p>Desenvolvido por <a href="https://josuealisson.vercel.app/" target="_blank">Josué Alisson</a></p>
+</footer>
 
 
-  
+  <!-- slide -->
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
   <!-- preloader -->
   <script src="assets/javascript/preloader.js"></script>
   <!-- Menu scroll -->
