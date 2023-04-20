@@ -663,6 +663,7 @@ section:nth-of-type(4) {
 section:nth-of-type(5) {
     background-image: url(/img/Fotos/IMG_3268.jpg);
     background-position-x: 50%;
+    background-position-y: -30%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 25rem;
