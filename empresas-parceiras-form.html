@@ -30,11 +30,14 @@ align-items: center;
 justify-content: center;
 width: 100vw;
 ">
+<style>
+
+</style>
     <!-- início do preloader -->
     <div id="preloader">
       <img src="img/Favicon/Favicon.png" alt="">
       <div class="inner">
-        <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+
       </div>
     </div>
     <!-- fim do preloader -->
@@ -48,23 +51,22 @@ width: 100vw;
   <div class="imgBody">
     <img src="img/Favicon/Favicon.png" alt="">
   </div>
-    <!-- Make sure you don't change the form action-->
-    <form action="https://api.staticforms.xyz/submit" method="post" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-      <!-- Replace with accesKey sent to your email -->
-      <input type="hidden" name="accessKey" value="2a00d686-979d-434d-9be1-4d16a1eb35e8"> <!-- Required -->
-      <input type="text" name="name" placeholder="Nome Completo"> <!-- Optional -->
-      <input type="text" name="subject" placeholder="Nome da Empresa"> <!-- Optional -->
-      <input type="text" name="email" placeholder="E-mail"> <!-- Optional -->
-      <input type="text" name="phone" placeholder="Telefone"> <!-- Optional -->
-      <textarea name="message" placeholder="Deixe alguma mensagem (Opcional)"></textarea> <!-- Optional -->
-      <!-- If you want replyTo to be set to specific email -->
-      <input type="text" name="replyTo" value="myreplytoemail@example.com"> <!-- Optional -->
-      <!-- Specify @ as reply to value if you want it to be customers email -->
-      <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-      <!-- If you want form to redirect to a specific url after submission -->
-      <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
-      <input type="submit" value="Submit" />
-  </form>
+  <form action="https://api.staticforms.xyz/submit" method="post">
+    <label>Nome</label>
+    <input type="text" name="name" placeholder="Digite seu nome" required >
+    <label>Nome da Empresa</label>
+    <input type="text" name="name" placeholder="Nome da Empresa" required >
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Digite seu email" required>
+    <label>Telefone / WhatsApp</label>
+    <input type="number" name="phone" placeholder="(00)9000-0000" required> 
+    <label>Mensagem</label>
+    <textarea name="message" cols="30" rows="10" placeholder="Digite alguma mensagem(Opicional)" ></textarea>
+    <button type="submit">Enviar</button>
+
+    <input type="hidden" name="accessKey" value="2a00d686-979d-434d-9be1-4d16a1eb35e8">
+    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+</form>
   
 
 
