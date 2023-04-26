@@ -24,14 +24,33 @@
   </head>
 <body 
 style="
-height: 100vh;
+height: 120vh;
 display: flex;
 align-items: center;
 justify-content: center;
 width: 100vw;
 ">
 <style>
-
+  form{
+    padding: 1rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  }
+  label{
+    font-weight: 900;
+  }
+  input, textarea{
+    border: rgb(45, 97, 175) 83%, rgb(221, 45, 45);
+    border-radius: 1rem;
+    background: #2bac2b2a;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 10px;
+  }
 </style>
     <!-- início do preloader -->
     <div id="preloader">
@@ -52,17 +71,18 @@ width: 100vw;
     <img src="img/Favicon/Favicon.png" alt="">
   </div>
   <form action="https://api.staticforms.xyz/submit" method="post">
+    <h1 style="color: #f5f5f5;">Seja Parceira</h1>
     <label>Nome</label>
     <input type="text" name="name" placeholder="Digite seu nome" required >
     <label>Nome da Empresa</label>
     <input type="text" name="name" placeholder="Nome da Empresa" required >
     <label>Email</label>
     <input type="email" name="email" placeholder="Digite seu email" required>
-    <label>Telefone / WhatsApp</label>
-    <input type="number" name="phone" placeholder="(00)9000-0000" required> 
-    <label>Mensagem</label>
-    <textarea name="message" cols="30" rows="10" placeholder="Digite alguma mensagem(Opicional)" ></textarea>
-    <button type="submit">Enviar</button>
+    <label>Número para contato</label>
+    <input type="number" name="phone" placeholder="(00)0000-0000" required> 
+    <label>Alguma Mesagem (Opcional)</label>
+    <textarea name="message" cols="30" rows="5" placeholder="Digite alguma mensagem(Opcional)" ></textarea>
+    <button type="submit" class="btn btn-info">Enviar</button>
 
     <input type="hidden" name="accessKey" value="2a00d686-979d-434d-9be1-4d16a1eb35e8">
     <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
